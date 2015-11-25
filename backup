@@ -1,0 +1,30 @@
+<ul class="dropdown">
+	<li><a href="index.html">Home</a>
+	</li>
+	<li><a href="#">About Us</a>
+	</li>
+	<li><a href="#">Contact Us</a>
+	</li>
+	<li><a href="#">More</a>
+		<ul class="sub_menu">
+			<li><a href="#">Ladders &amp; Sticks</a></li>
+			<li><a href="#">Hurdles</a></li>
+			<li><a href="#">Training Accessories</a></li>
+			<li><a href="#">Smart-Cart Training System</a></li>
+			<li><a href="#">Smart-Hurdle Collection</a></li>
+		</ul>
+	</li>
+
+</ul>
+	
+
+
+
+
+			<div id="header">
+				<img id="logo" src="assets/logo.png" alt="Robot Games logo"/><span id="headertext">Robot Games</span>
+				<div onclick="location.href='index.html'" class="nav-button">More</div>
+				<div onclick="location.href='index.html'" class="nav-button">Contact</div>
+				<div onclick="location.href='index.html'" class="nav-button">About Us</div>
+				<div onclick="location.href='index.html'" class="nav-button">Home</div>
+			</div>
