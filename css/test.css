@@ -14,8 +14,9 @@ ul.dropdown li a                    { display: block; padding: 4px 8px; border-r
 									  color: #222; }
 ul.dropdown li:last-child a         { border-right: none; }
 ul.dropdown li.hover,
-ul.dropdown li:hover                { background: #f2f2f2; color: black; position: relative; }
+ul.dropdown li:hover                { background: gray; color: black; position: relative; }
 ul.dropdown li.hover a              { color: black; } 
+
 .dropdown {
 	display: inline;
 }
