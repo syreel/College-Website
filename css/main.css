@@ -23,6 +23,11 @@ html, body {
 	color: black;
 }
 
+h1, h3, h5 {
+	display: flex;
+	justify-content: center;
+}
+
 .nav-button {
 	text-align: center;
 	float: right;
@@ -62,7 +67,7 @@ html, body {
 #innercontentmiddle {
 	background-color: #fff;
 	width: 90%;
-	height: 1000px;
+	height: 100%;
 	float: left;
 	color: black;
 }
