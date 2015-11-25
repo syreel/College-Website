@@ -1,15 +1,15 @@
 html, body {
-    height: 100%;
-    min-height: 100%;
+	height: 100%;
+	min-height: 100%;
 }
 
 html, body {
-    height: 100%;
-    min-height: 100%;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
+	height: 100%;
+	min-height: 100%;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	background-color: #f1f1f1;
 }
 
 #logo {
@@ -20,53 +20,68 @@ html, body {
 #headertext {
 	font-size: 57px;
 	left: -5px;
-	position: ;
+	color: black;
+}
+
+.nav-button {
+	text-align: center;
+	float: right;
+	margin-top: 18px;
+	height: 70%;
+	font-family: serif;
+	color: black;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.text-centered {
+	display: flex;
+	justify-content: center;
 }
 
 #mastercontainer {
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    margin-bottom: -100px;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	margin-bottom: -100px;
 }
 
 #header {
-    background-color: #434343;
-    height: 60px;
-    padding-left: 20%;
-}
-
-#navbar {
-    background-color: #434343;
-    height: 60px;
-    padding-left: 20%;
+	background-color: #fff;
+	height: 60px;
+	padding-left: 1%;
 }
 
 #content {
 }
 
 #innercontentmiddle {
-    background-color: #fff;
-    width: 90%;
-    height: 100%;
-    float: left;
+	background-color: #fff;
+	width: 90%;
+	height: 1000px;
+	float: left;
+	color: black;
 }
 
 #scroll-sidebar {
-    background-color: #f1f1f1;
-    width: 10%;
-    height: 100%;
-    float: left;
-}
-
-#footerclear {
+	background-color: #f1f1f1;
+	width: 10%;
+	height: 100%;
+	float: left;
 }
 
 #footer {
-    background-color: #434343;
-    max-height: 60px;
-    height: 5%;
-    padding-left: 20%;
-    float: left;
-    width: 100%;
+	background-color: #434343;
+	max-height: 60px;
+	height: 5%;
+	padding-left: 20%;
+	float: left;
+	width: 100%;
 }​
+
+#footerclear {
+}
