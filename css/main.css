@@ -88,7 +88,11 @@ h1, h3, h5 {
 	width: 90%;
 	-webkit-column-count: 3;
 	color: white;
-}​
+}
+
+.questions {
+	padding: 20px;
+}
 
 #footerclear {
 }

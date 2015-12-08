@@ -8,6 +8,49 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/navbar.js"></script>
+
+		<script>
+			function check()
+			{
+				var a1 = document.forms["questions"]["answer1"].value;
+				var a2 = document.forms["questions"]["answer2"].value;
+				var score = 0;
+				// var a3 = document.forms["questions"]["answer3"].value;
+				// var a4 = document.forms["questions"]["answer4"].value;
+				// var a5 = document.forms["questions"]["answer5"].value;
+				if (a1 == "" || a2 == "")
+				{
+					window.alert("One or more of your answers is blank please fill it in!");
+				}
+				else
+				{
+					if (a1 == "alert")
+					{
+						score = score + 1;
+						document.forms["questions"]["answer1"].style.color = "light-green";
+						
+					}
+					else (a1 != "alert")
+					{
+						document.forms["questions"]["answer1"].value = "alert";
+						document.forms["questions"]["answer1"].style.color = "red";
+					}
+
+					if (a2 == "style")
+					{
+						score = score + 1;
+						document.forms["questions"]["answer2"].style.color = "light-green";
+						
+					}
+					else (a2 != "style")
+					{
+						document.forms["questions"]["answer2"].value = "style";
+						document.forms["questions"]["answer2"].style.color = "red";
+					}
+				}
+				document.forms["questions"]["score-out"].value = score;
+			}
+		</script>
 		
 	</head>
 	<body>
@@ -61,7 +104,22 @@
 				
 				</div>
 				<div id="innercontentmiddle">
-					<h1 class="text-centered">Introduction To Robot Games</h1>
+					<h1 class="text-centered">Javascript Game</h1>
+					<form name="questions" onsubmit="return check();">
+						This is a javascript based game to help you learn javascript.<br />
+
+						<div id="question-1" class="questions">
+						Question 1<br />
+						window.<input id="ans1" type="text" name="answer1" />("Hello World!!");
+						</div>
+						<div id="question-2" class="questions">
+						Question 2<br />
+						document.getElementById("example").<input type="text" name="answer2" />.color = "blue";
+						</div>
+						<div id="score" class="questions">
+						Your score is: <input name="score-out"></input>
+						<input type="button" onclick="return check();"  value="submit" />
+					</form>
 
 				</div>
 			</div>
