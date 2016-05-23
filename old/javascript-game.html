@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>Robot Games - Home</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" href="css/navbar.css" type="text/css" media="screen, projection"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/navbar.js"></script>
+
+		<script>
+			function check()
+			{
+				var a1 = document.forms["questions"]["answer1"].value;
+				var a2 = document.forms["questions"]["answer2"].value;
+				var score = 0;
+				// var a3 = document.forms["questions"]["answer3"].value;
+				// var a4 = document.forms["questions"]["answer4"].value;
+				// var a5 = document.forms["questions"]["answer5"].value;
+				if (a1 == "" || a2 == "")
+				{
+					window.alert("One or more of your answers is blank please fill it in!");
+				}
+				else
+				{
+					if (a1 == "alert")
+					{
+						score = score + 1;
+						document.forms["questions"]["answer1"].style.color = "light-green";
+						
+					}
+					else (a1 != "alert")
+					{
+						document.forms["questions"]["answer1"].value = "alert";
+						document.forms["questions"]["answer1"].style.color = "red";
+					}
+
+					if (a2 == "style")
+					{
+						score = score + 1;
+						document.forms["questions"]["answer2"].style.color = "light-green";
+						
+					}
+					else (a2 != "style")
+					{
+						document.forms["questions"]["answer2"].value = "style";
+						document.forms["questions"]["answer2"].style.color = "red";
+					}
+				}
+				document.forms["questions"]["score-out"].value = score;
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div id="mastercontainer">
+			<div id="header">
+				<img id="logo" src="assets/logo.png" alt="Robot Games logo"/><span id="headertext">Robot Games</span>
+				<ul class="dropdown">
+					<li class="nav-button"><a>More</a>
+						<ul class="sub_menu">
+							<li><a href="web-architecture.html">Web Architecture</a>
+								<ul>
+									<li><a href="web-architecture.html">Web Architecture</a></li>
+									<li><a href="web-performance.html">Website Performance &amp; Security</a></li>
+									<li><a href="CSS.html">CSS</a></li>
+									<li><a href="HTML.html">HTML</a></li>
+									<li><a href="web-tools.html">Website Tools &amp; Techniques</a></li>
+									<li><a href="web-requirements-security.html">Website requirements &amp; Security</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Languages</a>
+								<ul>
+									<li><a href="HTML.html">HTML</a></li>
+									<li><a href="CSS.html">CSS</a></li>
+									<li><a href="stencyl.html">Stencyl</a></li>
+									<li><a href="javascript.html">Javascript</a></li>
+								</ul>
+							</li>
+							<li><a href="the-game.html">The Game</a>
+								<ul>
+									<li><a href="computer-games.html">Computer Games</a></li>
+									<li><a href="gaming-society.html">Gaming &amp; Society</a></li>
+									<li><a href="game-design.html">Game Design</a></li>
+									<li><a href="the-game.html">The Game</a></li>
+									<li><a href="game-testing.html">Game Testing</a></li>
+									<li><a href="game-documentation">Game Documentation</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-button"><a href="contact-us.html">Contact Us</a>
+					</li>
+					<li class="nav-button"><a href="about.html">About Us</a>
+					</li>
+					<li class="nav-button"><a href="index.html">Home</a>
+					</li>
+
+				</ul>
+			</div>
+			<div id="content">
+				<div id="scroll-sidebar">
+				
+				</div>
+				<div id="innercontentmiddle">
+					<h1 class="text-centered">Javascript Game</h1>
+					<form name="questions" onsubmit="return check();">
+						This is a javascript based game to help you learn javascript.<br />
+
+						<div id="question-1" class="questions">
+						Question 1<br />
+						window.<input id="ans1" type="text" name="answer1" />("Hello World!!");
+						</div>
+						<div id="question-2" class="questions">
+						Question 2<br />
+						document.getElementById("example").<input type="text" name="answer2" />.color = "blue";
+						</div>
+						<div id="score" class="questions">
+						Your score is: <input name="score-out"></input>
+						<input type="button" onclick="return check();"  value="submit" />
+					</form>
+
+				</div>
+			</div>
+			<div id="footerclear"></div>
+		<div id="footer">
+		<a href="index.html">Home</a><br />
+		<a href="web-architecture.html">Web Architecture</a><br />
+		<a href="web-performance.html">Website Performance &amp; Security</a><br />
+		<a href="CSS.html">CSS</a><br />
+		<a href="HTML.html">HTML</a><br />
+		<a href="web-tools.html">Website Tools &amp; Techniques</a><br />
+		<a href="web-requirements-security.html">Website requirements &amp; Security</a><br />
+		<br /><br />
+		<a href="HTML.html">HTML</a><br />
+		<a href="CSS.html">CSS</a><br />
+		<a href="stencyl.html">Stencyl</a><br />
+		<br /><br />
+		<a href="computer-games.html">Computer Games</a><br />
+		<a href="gaming-society.html">Gaming &amp; Society</a><br />
+		<a href="game-design.html">Game Design</a><br />
+		<a href="the-game.html">The Game</a><br />
+		<a href="game-testing.html">Game Testing</a><br />
+		<a href="game-documentation">Game Documentation</a><br />
+		<br /><br />
+		<a href="contact-us.html">Contact Us</a><br />
+		<a href="about.html">About Us</a><br />
+		
+		</div>
+		</div>
+	</body>
+</html>
+
