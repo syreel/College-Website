@@ -860,6 +860,48 @@ src="P6%20Testing_files/image006.png" v:shapes="Picture_x0020_3"><![endif]></spa
 
 <p class=MsoNormal>I have done some testing on the JavaScript on my website and
 it is working perfectly.</p>
+<p>
+function check()<br />
+			{<br />
+				var a1 = document.forms["questions"]["answer1"].value;<br />
+				var a2 = document.forms["questions"]["answer2"].value;<br />
+				var score = 0;<br />
+				// var a3 = document.forms["questions"]["answer3"].value;<br />
+				// var a4 = document.forms["questions"]["answer4"].value;<br />
+				// var a5 = document.forms["questions"]["answer5"].value;<br />
+				if (a1 == "" || a2 == "")<br />
+				{<br />
+					window.alert("One or more of your answers is blank please fill it in!");<br />
+				}<br />
+				else<br />
+				{<br />
+					if (a1 == "alert")<br />
+					{<br />
+						score = score + 1;<br />
+						document.forms["questions"]["answer1"].style.color = "light-green";<br />
+						
+					}<br />
+					else (a1 != "alert")<br />
+					{<br />
+						document.forms["questions"]["answer1"].value = "alert";<br />
+						document.forms["questions"]["answer1"].style.color = "red";<br />
+					}<br />
+
+					if (a2 == "style")<br />
+					{<br />
+						score = score + 1;<br />
+						document.forms["questions"]["answer2"].style.color = "light-green";<br />
+						
+					}<br />
+					else (a2 != "style")<br />
+					{<br />
+						document.forms["questions"]["answer2"].value = "style";<br />
+						document.forms["questions"]["answer2"].style.color = "red";<br />
+					}<br />
+				}<br />
+				document.forms["questions"]["score-out"].value = score;<br />
+			}<br />
+</p>
 
 </div>
 
